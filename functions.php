@@ -1,5 +1,4 @@
 <?php
-// !
 require_once 'PhpWord-Master/src/PhpWord/Autoloader.php';
 \PhpOffice\PhpWord\Autoloader::register();
 
