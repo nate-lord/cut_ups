@@ -1,4 +1,5 @@
-<?php 
+<?php
+//!
 	include 'functions.php';
 	echo make_doc_head();
 	echo make_pop_ups( 'splash' );
