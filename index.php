@@ -11,25 +11,25 @@
 				<div class="pageImgWrap small notVisible" id="leftPageImg">
 					<?php
 						echo '<?xml version="1.0" encoding="utf-8"?>';
-						include 'smallPageCode.svg'; 
+						include 'styles/imgs/smallPageCode.svg'; 
 					?>
 				</div>
 				<div class="pageImgWrap large notVisible" id="centerPageImg">
 					<?php
 						echo '<?xml version="1.0" encoding="utf-8"?>';
-						include 'largePageCode.svg'; 
+						include 'styles/imgs/largePageCode.svg'; 
 					?>
 				</div>
 				<object id="staticLargePageImg" class="hidden" >
 					<?php
 						echo '<?xml version="1.0" encoding="utf-8"?>';
-						include 'largePageStatic.svg'; 
+						include 'styles/imgs/largePageStatic.svg'; 
 					?>
 				</object>
 				<div class="pageImgWrap small notVisible" id="rightPageImg">
 					<?php
 						echo '<?xml version="1.0" encoding="utf-8"?>';
-						include 'smallPageCode.svg'; 
+						include 'styles/imgs/smallPageCode.svg'; 
 					?>
 				</div>
 			</div>

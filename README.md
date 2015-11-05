@@ -21,4 +21,8 @@ If the user selects multiple sources the texts are folded together, one line fro
 
 An optional title and password (allowing the page to be locked) can be added.
 
+<<<<<<< Updated upstream
 The user transitions to the new document. There the user can manipulate the document as one could with a pared-down OpenOffice text document.
+=======
+The user transitions to the new document. There the user can manipulate the document as one could with a pared-down OpenOffice text document.
+>>>>>>> Stashed changes

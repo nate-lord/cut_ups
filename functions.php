@@ -171,10 +171,6 @@ function delete_doc( $dir ) {
 	$files = scandir( $dir );
 	$lastFile = $files[ count( $files ) - 1 ];
 	
-	if ( $lastFile === 'zzz.txt' ) {
-		return;
-	}
-	
 	if ( $lastFile === 'subfile.txt' ) {
 		delete_tree( $dir );
 		
@@ -214,16 +210,21 @@ function delete_tree( $dir ) {
 	
 	$files = array_diff( scandir( $dir ), array( '.', '..' ) );
 	
+	$isInSubDir = false;
+	
 	foreach ( $files as $file ) {
-		if ( $file === '000.txt' ) {
-			break;
-			return;
+		if ( $file === 'subfile.txt' ) {
+			$isInSubDir = true;
 		}
-		
-		( is_dir( "$dir/$file" ) ) ? delete_tree( "$dir/$file" ) : unlink( "$dir/$file" );
 	}
 	
-	rmdir( $dir );
+	if ( $isInSubDir ) {
+		foreach ( $files as $file ) {
+			( is_dir( "$dir/$file" ) ) ? delete_tree( "$dir/$file" ) : unlink( "$dir/$file" );
+		}
+		
+		rmdir( $dir );
+	}
 }
 
 function get_published_content( $file, $maxCharCnt ){
