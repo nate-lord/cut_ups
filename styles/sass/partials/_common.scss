@@ -1,0 +1,154 @@
+/* begin common styles */
+
+* {
+	background-repeat: no-repeat;
+	box-sizing: inherit;
+	text-rendering: optimizeLegibility;
+	
+	.loading & {
+		transition: none !important;
+	}
+	
+	&:after,
+	&:before {
+		box-sizing: inherit;
+		content: '';
+		position: absolute;
+	}
+}
+
+html {
+  box-sizing: border-box;
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	color: $text-clr;
+	font: 1.8rem / 166.666666666667% $sans-serif-fnt;
+	height: 100%;
+	position: relative;
+	transition: opacity 300ms;
+	
+	&.transitionToNew {
+		opacity: 0;
+	}
+	
+	&.noScroll {
+	  height: 100%;
+		overflow: hidden;
+	}
+}
+
+// general pseudo-classes / pseudo-interactions
+
+:-moz-placeholder {
+	color: $text-clr;
+}
+
+::-moz-placeholder {
+	color: $text-clr;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: $text-clr;
+}
+
+::-webkit-input-placeholder {
+	color: $text-clr;
+}
+
+::selection {
+	background: $highlight-text-bk-clr;
+	color: $highlight-text-clr;
+}
+
+// utility classes
+
+.hidden {
+	display: none !important;
+}
+
+.ir {
+	color: transparent;
+  font: 0/0 a;
+}
+
+// global style classes
+
+.textBtn {
+	background-color: $bk-clr;
+	border: 0.1rem solid $interaction-clr;
+	color: $interaction-clr;
+	font: 1.8rem $mono-fnt;
+	margin-top: 1.5rem;
+	padding: 0.6rem;
+	position: absolute;
+	transition: color 300ms,
+							background-color 300ms;
+
+	&:hover {
+		background-color: $interaction-clr;
+		color: $bk-clr;
+	}
+}
+
+.btn,
+.menuBtn {
+	// order matters here
+	
+	overflow: hidden;
+	
+	&.ir {
+		background-position: center center;
+		background-repeat: no-repeat;
+		position: relative;
+		
+		&:before {
+			background-position: inherit;
+			background-repeat: inherit;
+			border: inherit;
+			border-color: transparent;
+			height: inherit;
+			left: 0;
+			opacity: 0;
+			top: -0.1rem;
+			transition: opacity 0.2s;
+			width: inherit;
+		}
+	}
+	
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
+}
+
+.menuBtn {
+	border: 1px solid $interaction-clr-alt;
+	height: 3rem;
+	width: 3rem;
+}
+
+.logo.btn {
+	background-image: url( $img_path + 'logo.svg' );
+	cursor: pointer;
+	height: 8rem;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 8rem; 
+	
+	@media( max-width: 700px ) {
+		top: -0.5rem;
+		left: -0.5rem;
+	}
+	
+	&:before {
+		background-image: url( $img_path + 'hover-logo.svg' );
+	}
+}
+
+/* end common styles */

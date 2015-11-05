@@ -1,0 +1,142 @@
+/* begin custom scroll styles */
+
+.mCustomScrollbar,
+.mCustomScrollbar.mCS_no_scrollbar {
+	-ms-touch-action: none;
+	touch-action:			none;
+}
+
+.mCustomScrollBox {
+	/* contains plugin's markup */
+	direction: ltr;
+	height: 100%;
+	max-width: 100%;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+}
+
+.mCSB_container {
+	/* contains the original content */
+	height: auto;
+	overflow: hidden;
+	width: auto;
+	
+	.inputTextSrc & {
+		padding: 1rem 8rem 1rem 3rem;
+	}
+	
+	.publishedTextSrc & {
+		padding: 1rem 2rem;
+		
+		.left &,
+		.right & {
+			padding-right: 8rem;
+		}
+	}
+}
+
+.mCSB_scrollTools_vertical {
+	.left .inputTextSrc &,
+	.right .inputTextSrc &,
+	.left .publishedTextSrc &,
+	.right .publishedTextSrc & {
+		transform: translateX (-6rem );
+	}
+	
+	.publishedTextSrc & {
+		transition: transform 300ms 750ms;
+	}
+}
+
+
+.mCSB_scrollTools.mCSB_scrollTools_vertical {
+	/* contains scrollbar markup (draggable element, dragger rail, buttons etc.) */
+	bottom: 1rem;
+	height: auto;
+	left: auto;
+	position: absolute;
+	right: -0.6rem;
+	top: 1rem;
+	width: 1.5rem;
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+	/* contains the draggable element and dragger rail markup */
+	bottom: 0;
+	height: auto;
+	left: 0;
+	position: absolute;
+	right: 0; 
+	top: 0;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+	border-radius: 0;
+	height: 100%;
+	margin: 0 auto;
+	width: 0.4rem;
+}
+
+.mCSB_scrollTools .mCSB_dragger {
+	/* the draggable element */
+	cursor: pointer;
+	height: 3rem;
+	width: 100%;
+}
+
+.mCSB_dragger_bar {
+	/* the dragger element */
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	width: 0.4rem;
+	
+	.default .publishedTextSrc:hover &,
+	.default .publishedTextBtn:hover ~ .inputTextSrc & {
+		border-color: $interaction-clr;
+	}
+}
+
+.mCSB_container_wrapper {
+	bottom: 0;
+	height: auto;
+	left: 0;
+	margin-bottom: 3rem;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: auto;
+}
+
+.mCSB_container_wrapper > .mCSB_container {
+	padding-bottom: 3rem;
+}
+
+.mCSB_container_wrapper.mCS_no_scrollbar_y.mCS_y_hidden > .mCSB_container { 
+	padding-right: 0; 
+}
+
+.mCSB_dragger_bar {
+	border: 0.1rem solid $bk-clr;
+	border-right-width: 0;
+	box-sizing: content-box;
+	transition: background-color 500ms,
+							border-color 500ms;
+	z-index: 1;
+	
+	.left &,
+	.right & {
+		background-color: $interaction-clr;
+		border-color: $bk-clr;
+	}
+	
+	.default & {
+		background-color: $bk-clr !important;
+		border-color: $interaction-clr-alt;
+	}
+}
+
+/* end custom scroll styles */

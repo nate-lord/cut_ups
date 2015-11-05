@@ -1,0 +1,35 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg
+	class="smallPage"
+	width="90px"
+	height="120px"
+	x="0px"
+	y="0px"
+	viewBox="0 0 90 120"
+	enable-background="new 0 0 90 120"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xml:space="preserve"
+>
+	
+	<!-- the text that merges into the large page -->
+	<g class="intTextGroup">
+		<rect x="17" y="20" width="36" height="3" class="text"/>
+		<rect x="17" y="35" width="56" height="3" class="text"/>
+		<rect x="17" y="50" width="56" height="3" class="text"/>
+		<rect x="17" y="65" width="56" height="3" class="text"/>
+		<rect x="17" y="80" width="56" height="3" class="text"/>
+		<rect x="17" y="95" width="56" height="3" class="text"/>
+	</g>
+	
+	<!-- the mask that covers the page crease -->
+	<rect class="mask" x="64" fill="#FFFFFF" width="26" height="26"/>
+	
+	<!-- page's outline -->
+	<g class="pageOutlineGroup">
+		<path class="pageOutline" d="M64,26V0H0v120h90V26H64z M89,119H1V1h62v26h26V119z"/>
+		<polygon class="pageCrease" points="65,0 90,25 90,24 66,0 	"/>
+	</g>
+</svg>

@@ -1,0 +1,240 @@
+/* begin splash page styles */
+
+#splash {
+	height: 100%;
+	opacity: 1;
+	position: relative;
+	transition: opacity 400ms,
+							transform 400ms;
+							
+	&.notVisible {
+		opacity: 0;
+	}
+}
+
+#splashInnerWrap {
+	height: 30.4rem;
+	left: 50%;
+	margin: -10.2rem -21.9rem -20.2rem -21.9rem;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	width: 43.8rem;
+	
+	@media( max-width: 450px ), ( max-height: 304px ) {
+		margin-left: -12.2rem;
+		margin-right: -12.2rem;
+		width: 24.5rem;
+	}
+	
+	@media( max-width: 246px ) {
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+	
+	@media( max-height: 425px ) {
+		margin-bottom: -15.2rem;
+		margin-top: -15.2rem;
+	}
+	
+	@media( max-height: 304px ) {
+		height: 100%;
+		margin-bottom: auto;
+		margin-top: auto;
+		top: 0;
+	}
+}
+
+#splashCanvas {
+	height: 20.4rem;
+	position: relative;
+	width: 100%;
+	
+	@media( max-height: 304px ) {
+		height: 70%;
+		height: calc( 100% - 10rem );
+		margin: 1rem 0 0.5rem 0;
+	}
+}
+
+.pageImgWrap {
+	opacity: 1;
+	overflow: hidden;
+	position: absolute;
+	transform: translateY( 0 );
+	transition: opacity 200ms,
+							transform 200ms;
+	
+	&.small {
+		height: 12.8rem;
+		right: 0;
+		top: 4.6rem;
+		width: 9.8rem;
+		
+		@media( max-width: 450px ), ( max-height: 304px ) {
+			transition-property: none;
+			opacity: 0;
+			z-index: -1;
+		}
+		
+		&:after {
+			height: 9.3rem;
+		}
+		
+		&:before { 
+			width: 9.3rem;
+		}
+	}
+	
+	&.large {
+		height: inherit;
+		left: 50%;
+		margin: 0 0 0 -7.8rem;
+		width: 15.5rem;
+		
+		@media( max-height: 304px ) {
+			transition-property: none;
+			opacity: 0;
+			z-index: -1;
+		}
+		
+		&:after {
+			height: 15.3rem;
+		}
+		
+		&:before { 
+			width: 15.3rem;	
+		}
+	}
+	
+	&.notVisible {
+		opacity: 0;
+		transform: translateY( 1.5rem );
+	}
+	
+	&:after,
+	&:before {
+		background-color: $bk-clr;
+		background-image: url( $img_path + 'shadowX.svg' );
+		background-position: bottom right;
+		right: 0;
+		z-index: 1;
+	}
+	
+	&:before {
+		bottom: 0;
+		height: 0.8rem;
+	}
+	
+	&:after {
+		border-top: 1rem solid $bk-clr;
+		bottom: 1rem;
+		box-sizing: content-box;
+		width: 0.8rem;
+	}
+}
+
+.pageImgWrap.large > svg {
+	left: -9rem;
+	opacity: 1;
+	position: relative;
+}
+
+.pageImgWrap.small:first-child {
+	left: 0;
+	right: auto;
+}
+
+#largePage {
+	left: -9rem;
+	position: relative;
+}
+
+#staticLargePageImg {
+	height: 100%;
+	margin: 0 auto;
+	max-height: 20.6rem;
+	max-width: 15.7rem;
+	width: 100%;
+	
+	@media( max-height: 304px ) {
+		display: block !important;
+	}
+}
+
+#staticLargePageImg > * {
+	max-height: 100%;
+}
+
+#projectFeatures {
+	height: 7rem;
+	position: relative;
+	width: 100%;
+	
+	@media( max-height: 304px ) {
+		height: 4rem;
+	}
+}
+
+.projectFeature {
+	font: 1.2rem / 7rem $mono-fnt-alt;
+	height: 100%;
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	top: 0;
+	transform: translateY( 0 );
+	transition: opacity 500ms,
+							transform 500ms;
+	vertical-align: middle;
+	width: 100%;
+	z-index: 1;
+	
+	@media( max-height: 304px ) {
+		line-height: 4rem;
+	}
+	
+	&.notCurrent {
+		opacity: 0;
+		transform: translateY( 2rem );
+		z-index: auto;
+	}
+}
+
+#createProjectFromSplash {
+	background-image: url( $img_path + 'continueButton.svg' );
+	display: block;
+	height: 3rem;
+	left: 50%;
+	margin-left: -3rem;
+	position: relative;
+	width: 6rem;
+	
+	&:before {
+		background-image: url( $img_path + 'hover-continueButton.svg' );
+	}
+}
+
+.cursor {
+	&.animating {
+		animation: $BLINK;
+	}
+	
+	&.notAnimating {
+		animation: none;
+	}
+	
+	&.visible {
+		opacity: 1;
+	}
+	
+	&.notVisible {
+		opacity: 0;
+	}
+}
+
+/* end splash page styles */

@@ -1,0 +1,71 @@
+/* begin quill editor styles */
+
+.ql-editor {
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	
+	span[ style='font-size: 10px;' ] {
+		font-size: 0.9rem;
+		line-height: 1.5rem;
+	}
+	
+	span[ style='font-size: 18px;' ] {
+		font-size: 1.6rem;
+		line-height: 3rem;
+	}
+	
+	span[ style='font-size: 32px;' ] {
+		font-size: 2.4rem;
+		line-height: 4.5rem;
+	}
+	
+	span[ style='font-size: 48px;' ] {
+		font-size: 3.6rem;
+		line-height: 6rem;
+	}
+	
+	span[ style='font-family: sans-serif;' ],
+	span[ style='font-family: sans-serif;' ] i {
+		font-family: $sans-serif-fnt !important;
+	}
+	
+	span[ style='font-family: serif;' ]{
+		font-family: $serif-fnt !important;
+	}
+	
+	span[ style='font-family: monospace;' ],
+	span[ style='font-family: monospace;' ] i {
+		font-family: $mono-fnt !important;
+	}
+	
+	div {
+	  margin: 0;
+	  padding: 0;
+	}
+	
+	b,
+	i {
+		background-color: inherit;
+	}
+	
+	b {
+	  font-weight: bold;
+	}
+	
+	i {
+	  font-style: italic;
+	}
+	
+	&.ql-ie-9 br,
+	&.ql-ie-10 br {
+  	display: none;
+	}
+}
+
+.ql-paste-manager {
+  left: -10000rem;
+  position: absolute;
+  top: 50%;
+}
+
+/* end quill editor styles */

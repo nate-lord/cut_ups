@@ -1,0 +1,59 @@
+/* start typography  */
+
+$font_path: '../fonts/';
+
+@font-face {
+	font-family: 'neutral';
+	src: url( $font_path + 'neutral.eot' );
+	src: url( $font_path + 'neutral.eot?#iefix' ) format( 'embedded-opentype' ),
+			 url( $font_path + 'neutral.woff' ) format( 'woff' ),
+			 url( $font_path + 'neutral.svg' ) format( 'svg' );
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'romain';
+	src: url( $font_path + 'romain.woff' ) format( 'woff' );
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'romain';
+	src: url( $font_path + 'romainItalic.woff2' ) format( 'woff2' ),
+       url( $font_path + 'romainItalic.woff' ) format( 'woff' );
+	font-style: italic;
+	font-weight: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'simplonMono';
+	src: url( $font_path + 'simplonMono.woff2' ) format( 'woff2' ),
+       url( $font_path + 'simplonMono.woff' ) format( 'woff' );
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'skyhookMono';
+	src: url( $font_path + 'skyhookMono.eot' );
+	src: url( $font_path + 'skyhookMono.eot?#iefix' ) format( 'embedded-opentype' ),
+			 url( $font_path + 'skyhookMono.woff' ) format( 'woff' ),
+			 url( $font_path + 'skyhookMono.svg' ) format( 'svg' );
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+}
+
+$mono-fnt: 'simplonMono';
+$mono-fnt-alt: 'skyhookMono';
+$mono-system-fnt: 'Courier New';
+$sans-serif-fnt: 'neutral';
+$serif-fnt: 'romain';
+
+/* end typography  */

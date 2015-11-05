@@ -1,0 +1,155 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+	id="largePage"
+	width="326px"
+	height="196px"
+	x="0px"
+	y="0px"
+	viewBox="0 0 326 196"
+	enable-background="new 0 0 326 196"
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xml:space="preserve"
+>
+	
+	<!-- text that appears under the animated writing and text manipulation -->
+	<g id="baseTextGroup">
+		<rect x="118" y="23" width="67" height="3" class="text"/>
+		<rect x="118" y="39" width="67" height="3" class="text"/>
+		<rect x="118" y="55" width="90" height="3" class="text"/>
+		<rect x="118" y="70" width="90" height="3" class="text"/>
+		<rect x="118" y="86" width="90" height="3" class="text"/>
+		<rect x="118" y="102" width="90" height="3" class="text"/>
+		<rect x="118" y="118" width="90" height="3" class="text"/>
+		<rect x="118" y="133" width="90" height="3" class="text"/>
+		<rect x="118" y="149" width="90" height="3" class="text"/>
+		<rect x="118" y="165" width="90" height="3" class="text"/>
+	</g>
+	
+	<!-- the whiteout and cursors in text manipulation -->
+	<g id="whiteOutGroup">
+
+		<polygon class="whiteOut" id="whiteOut1" points="118,21 121,21 121,28 118,28" fill="#FFFFFF" data-plot_points="118 21 151 21 151 28 118 28"/>
+		<!-- L 2 R: 118 21 151 21 151 28 118 28 -->
+		<rect class="cursor" id="whiteOutCursor1" x="118" y="21" width="3" height="7" data-x="148"/>
+
+		<polygon class="whiteOut" id="whiteOut2" points="145,53 148,53 148,60 145,60" fill="#FFFFFF" data-plot_points="115 53 148 53 148 60 115 60"/>
+		<!-- R 2 L: 115 53 148 53 148 60 115 60 -->
+		<rect class="cursor" id="whiteOutCursor2" x="145" y="53" width="3" height="7" data-x="115"/>
+
+		<polygon class="whiteOut" id="whiteOut3" points="158,68 161,68 161,75 158,75" fill="#FFFFFF" data-plot_points="158 68 211 68 211 75 158 75"/>
+		<!-- L 2 R: 158 68 211 68 211 75 158 75 -->
+		<rect class="cursor" id="whiteOutCursor3" x="158" y="68" width="3" height="7" data-x="208"/>
+
+		<polygon class="whiteOut" id="whiteOut4" points="158,116 161,116 161,123 158,123" fill="#FFFFFF" data-plot_points="118 116 161 116 161 123 118 123"/>
+		<!-- R 2 L: 118 116 161 116 161 123 118 123 -->
+		<rect class="cursor" id="whiteOutCursor4" x="158" y="116" width="3" height="7" data-x="118"/>
+
+		<polygon class="whiteOut" id="whiteOut5" points="205,116 208,116 208,123 205,123" fill="#FFFFFF" data-plot_points="175 116 208 116 208 123 175 123"/>
+		<!-- R 2 L: 175 116 208 116 208 123 175 123 -->
+		<rect class="cursor" id="whiteOutCursor5" x="205" y="116" width="3" height="7" data-x="175"/>
+
+		<polygon class="whiteOut" id="whiteOut6" points="118,131 121,131 121,138 118,138" fill="#FFFFFF" data-plot_points="118 131 161 131 161 138 118 138"/>
+		<!-- L 2 R: 118 131 161 131 161 138 118 138 -->
+		<rect class="cursor" id="whiteOutCursor6" x="118" y="131" width="3" height="7" data-x="158"/>
+
+		<polygon class="whiteOut" id="whiteOut7" points="205,163 208,163 208,170 205,170" fill="#FFFFFF" data-plot_points="175 163 208 163 208 170 175 170"/>
+		<!-- R 2 L: 175 163 208 163_208 170 175 170 -->
+		<rect class="cursor" id="whiteOutCursor7" x="205" y="163" width="3" height="7" data-x="175"/>
+	
+	</g>
+	
+	<!-- mask and cursor that creates the animated writing -->
+	<g id="writeTextGroup">
+		<g class="writeText">
+			<rect x="118" y="21" fill="#FFFFFF" width="3" height="7" class="cursor"/>
+			<rect x="121" y="21" fill="#FFFFFF" width="64" height="7" class="mask"/>
+		</g>
+		<g class="writeText">
+			<rect x="118" y="37" fill="#FFFFFF" width="3" height="7" class="cursor"/>
+			<rect x="121" y="37" fill="#FFFFFF" width="64" height="7" class="mask"/>
+		</g>
+		<g class="writeText">
+			<rect x="118" y="53" fill="#FFFFFF" width="3" height="7" class="cursor"/>
+			<rect x="121" y="53" fill="#FFFFFF" width="87" height="7" class="mask"/>
+		</g>
+		<g class="writeText">
+			<rect x="118" y="68" fill="#FFFFFF" width="3" height="7" class="cursor"/>
+			<rect x="121" y="68" fill="#FFFFFF" width="87" height="7" class="mask"/>
+		</g>
+		<g class="writeText">
+			<rect x="118" y="84" fill="#FFFFFF" width="3" height="7" class="cursor"/>
+			<rect x="121" y="84" fill="#FFFFFF" width="87" height="7" class="mask"/>
+		</g>
+		<g class="writeText">
+			<rect x="118" y="100" fill="#FFFFFF" width="3" height="7" class="cursor"/>
+			<rect x="121" y="100" fill="#FFFFFF" width="87" height="7" class="mask"/>
+		</g>
+		<g class="writeText">
+			<rect x="118" y="116" fill="#FFFFFF" width="3" height="7" class="cursor"/>
+			<rect x="121" y="116" fill="#FFFFFF" width="87" height="7" class="mask"/>
+		</g>
+		<g class="writeText">
+			<rect x="118" y="131" fill="#FFFFFF" width="3" height="7" class="cursor"/>
+			<rect x="121" y="131" fill="#FFFFFF" width="87" height="7" class="mask"/>
+		</g>
+		<g class="writeText">
+			<rect x="118" y="147" fill="#FFFFFF" width="3" height="7" class="cursor"/>
+			<rect x="121" y="147" fill="#FFFFFF" width="87" height="7" class="mask"/>
+		</g>
+		<g class="writeText">
+			<rect x="118" y="163" fill="#FFFFFF" width="3" height="7" class="cursor"/>
+			<rect x="121" y="163" fill="#FFFFFF" width="87" height="7" class="mask"/>
+		</g>
+	</g>
+	
+	<!-- the init merging text animation -->
+	<g class="initTextGroup">
+		<rect x="23" y="23" width="67" height="3" class="text left"/>
+		<rect x="23" y="39" width="67" height="3" class="text left"/>
+		<rect x="0" y="55" width="90" height="3" class="text left"/>
+		<rect x="0" y="70" width="90" height="3" class="text left"/>
+		<rect x="0" y="86" width="90" height="3" class="text left"/>
+		
+		<rect x="236" y="102" width="90" height="3" class="text right"/>
+		<rect x="236" y="118" width="90" height="3" class="text right"/>
+		<rect x="236" y="133" width="90" height="3" class="text right"/>
+		<rect x="236" y="149" width="90" height="3" class="text right"/>
+		<rect x="236" y="165" width="90" height="3" class="text right"/>
+	</g>
+	
+	<!-- the blinking cursor -->
+	<rect id="splashBlinkingCursor" x="118" y="21" width="3" height="7" class="cursor notAnimating notVisible"/>
+	
+	<!-- the saving and downloading cloud image -->
+	<g id="cloudGroup">
+		<path id="cloudOutline" d="M196.09,125.299c-1.377-7.291-7.75-12.688-15.16-12.688c-2.189,0-4.361,0.479-6.363,1.4
+			c-3.053-9.087-11.52-15.307-21.108-15.307c-12.305,0-22.314,10.13-22.314,22.58c0,1.1,0.082,2.209,0.244,3.314
+			c-3.814,1.438-6.389,5.113-6.389,9.312c0,4.668,3.194,8.648,7.592,9.686L158,143.603V141h-23.516l-0.486,0.116
+			c-3.691-0.432-6.477-3.516-6.477-7.29c0-3.438,2.303-6.359,5.598-7.17l1.168-0.266l-0.232-1.169
+			c-0.258-1.311-0.387-2.634-0.387-3.942c0-11.061,8.877-20.055,19.791-20.055c8.961,0,16.823,6.139,19.116,14.928l0.422,1.617
+			l1.439-0.848c1.982-1.17,4.229-1.789,6.494-1.789c6.436,0,11.934,4.877,12.795,11.343l0.117,0.884l0.873,0.185
+			c3.168,0.667,5.465,3.538,5.465,6.825c0,3.561-2.625,6.365-6.109,6.756L193.653,141H167v2.605l28.473,0.006
+			c4.191-0.995,7.23-4.784,7.23-9.241C202.704,130.197,199.969,126.515,196.09,125.299z"/>
+		<polygon id="cloudArrow" points="164,152.459 164,131.635 168.54,136.715 170.924,134.626 162.504,125.095 154.078,134.626 
+			156.473,136.715 161,131.635 161,152.459 156.475,147.38 154.1,149.468 162.524,159 170.95,149.468 168.542,147.38 	"/>
+	</g>
+	
+	<!-- the masks that cover the init merging text -->
+	<g id="leftRightMaskGroup">
+		<!-- right mask -->
+		<rect class="mask" x="236" y="102" fill="#FFFFFF" width="90" height="66"/>
+		<!-- left mask -->
+		<rect class="mask" x="0" y="23" fill="#FFFFFF" width="90" height="66"/>
+	</g>
+	
+	<!-- the mask that covers the page crease -->
+	<rect class="mask" x="195" fill="#FFFFFF" width="41" height="41"/>
+	
+	<!-- page's outline -->
+	<g class="pageOutlineGroup">
+		<path class="pageOutline" d="M195,41V0H90v196h146V41H195z M235,195H91V1h103v39.813V42h1h40V195z"/>
+		<polygon class="pageCrease" points="197,0 196,0 236,39.813 236,38.813 	"/>
+	</g>
+</svg>

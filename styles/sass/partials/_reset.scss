@@ -1,0 +1,204 @@
+/* begin css reset styles */
+
+body {
+	line-height: 1;
+}
+
+a,
+b,
+i,
+p,
+q,
+s,
+u,
+dd,
+dl,
+dt,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ol,
+td,
+th,
+tr,
+tt,
+ul,
+big,
+del,
+dfn,
+div,
+img,
+ins,
+kbd,
+nav,
+pre,
+sub,
+sup,
+var,
+abbr,
+body,
+cite,
+code,
+form,
+html,
+mark,
+menu,
+ruby,
+samp,
+span,
+time,
+aside,
+audio,
+embed,
+label,
+small,
+table,
+tbody,
+tfoot,
+thead,
+video,
+applet,
+canvas,
+center,
+figure,
+footer,
+header,
+hgroup,
+iframe,
+legend,
+object,
+output,
+strike,
+strong,
+acronym,
+address,
+article,
+caption,
+details,
+section,
+summary,
+fieldset,
+figcaption,
+blockquote {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+nav,
+main,
+menu,
+aside,
+header,
+footer,
+figure,
+article,
+details,
+section,
+figcaption {
+	display: block;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+q,
+blockquote {
+	quotes: none;
+	
+	&:after,
+	&:before {
+		content: '';
+		content: none;
+	}
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+textarea {
+	border: none;
+	box-shadow: none;
+	outline: none;
+  overflow: auto;
+}
+
+@-moz-document url-prefix() {
+  input,
+  button {
+    &::-moz-focus-inner {
+      border: 0;
+      padding: 0;
+    }
+  }
+}
+
+button {
+  -webkit-appearance: none;
+  -webkit-background-clip: padding;
+  -moz-background-clip:		 padding;
+  background-clip:				 padding-box;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.8rem;
+  font-family: $sans-serif-fnt, Ariel, sans-serif;
+	line-height: normal !important;
+  overflow: visible;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+}
+
+input[ type='radio' ] {
+  margin: 0;
+}
+
+input[ type='text' ],
+input[ type='password' ] {
+  -webkit-appearance: none;
+  background:					none;
+  -webkit-background-clip: padding;
+  -moz-background-clip:		 padding;
+  background-clip:				 padding-box;
+  border: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+	font-family: $sans-serif-fnt, Ariel, sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-align: left;
+  vertical-align: top;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+*:focus {
+	outline: none;
+}
+
+/* end css reset styles */

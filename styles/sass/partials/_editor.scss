@@ -1,0 +1,379 @@
+/* begin text editor styles */
+
+#editor {
+	margin: 0 auto;
+	max-width: 81.6rem;
+	padding: 2.5rem 0 4rem 0;
+	width: calc( 100% - 8rem );
+	
+	@media( max-width: 700px ) {
+		width: calc( 100% - 2rem );
+	}
+	
+	&.canLock {
+		padding-top: 2.5rem;
+	}
+}
+
+body > .logo.btn {
+	background-image: url( $img_path + 'editor-logo.svg' );
+	
+	&:before {
+		background-image: url( $img_path + 'hover-editor-logo.svg' );
+	}
+}
+
+.editorPage #aboutPage header {
+	margin-top: 5.4rem;
+}
+
+#toggleTextSrcsWrap {
+	height: 3rem;
+	position: absolute;
+	right: 4.5rem;
+	top: -3.5rem;
+	width: 3rem;
+}
+
+#toggleTextSrcs {
+	border: none;
+	cursor: pointer;
+	height: 100%;
+	left: 0;
+	margin: 0;
+	opacity: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+#toggleTextSrcsBtn {
+	background-image: url( $img_path + 'showAllSources.svg' );
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+	
+	#toggleTextSrcs:checked + & {
+		background-image: url( $img_path + 'hideTextSources.svg' );
+		
+		&:before {
+			background-image: url( $img_path + 'hover-hideTextSources.svg' );
+		}
+	}
+	
+	&:before {
+		background-image: url( $img_path + 'hover-showAllSources.svg' );
+		left: 0;
+		top: 0;
+		
+		#toggleTextSrcs:hover + & {
+			opacity: 1;
+		}
+	}
+}
+
+#fileMenu {
+	height: 3rem;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: -3.5rem;
+	width: 3rem;
+	
+	&.open {
+		height: 15.5rem;
+	}
+	
+	.locked & {
+		height: 3rem !important;
+	}
+}
+
+#fileMenu > * {
+	border: 1px solid $interaction-clr-alt;
+	border-width: 0 1px 1px 1px;
+	left: 0;
+	position: absolute;
+	
+	&:before {
+		left: 0;
+		top: 0;
+	}
+}
+
+#fileMenu > *:first-child,
+#fileMenu > *:first-child + * {
+	border-width: 1px;
+}
+
+#folder {
+	background-image: url( $img_path + 'folder.svg' );
+	top: 0;
+}
+
+#save {
+	background-image: url( $img_path + 'save.svg' );
+	top: 3.5rem;
+	
+	&:before {
+		background-image: url( $img_path + 'hover-save.svg' );
+	}
+}
+
+#download {
+	background-image: url( $img_path + 'downloadDocument.svg' );
+	top: 6.5rem;
+	
+	&:before {
+		background-image: url( $img_path + 'hover-downloadDocument.svg' );
+	}
+}
+
+#newDocument {
+	background-image: url( $img_path + 'newDocument.svg' );
+	top: 9.5rem;
+
+	&:before {
+		background-image: url( $img_path + 'hover-newDocument.svg' );
+	}
+}
+
+#deleteProject {
+	background-image: url( $img_path + 'trash.svg' );
+	top: 12.5rem;
+	
+	&:before {
+		background-image: url( $img_path + 'hover-trash.svg' );
+	}
+}
+
+#editorOptions {
+	position: relative;
+	z-index: 1;
+}
+
+#toggleLockMenu {
+	height: 3rem;
+	overflow: hidden;
+	position: absolute;
+	right: 9rem;
+	top: -3.5rem;
+	transition: width 300ms;
+	width: 3rem;
+
+	.locked &.open {
+		width: 19rem;
+	}
+}
+
+#toggleLock {
+	left: 0;
+	position: absolute;
+	z-index: 1;
+	
+	.unlocked  & {
+		background-image: url( $img_path + 'unlocked.svg' );
+		
+		&:before {
+			background-image: url( $img_path + 'hover-unlocked.svg' );
+		}
+	}
+	
+	.locked  & {
+		background-image: url( $img_path + 'locked.svg' );
+		
+		&:before {
+			background-image: url( $img_path + 'hover-locked.svg' );
+		}
+	}
+	
+	#toggleLockMenu:hover > &:before {
+		opacity: 1;
+	}
+}
+
+#unlockPasswordInputWrap {
+	border: 0.1rem solid $interaction-clr-alt;
+	border-left: 0;
+	height: 100%;
+	left: 3rem;
+	position: absolute;
+	right: 0;
+}
+
+#passwordInputError {
+	background-image: url( $img_path + 'error.svg' );
+	height: 2rem;
+	position: absolute;
+	right: 3rem;
+	top: 0.5rem;
+	transition: transform 200ms;
+	transform: translateY( 4rem );
+	width: 2rem;
+	
+	.inputError & {
+		transform: translateY( 0 );
+	}
+}
+
+#unlockPasswordInput {
+	left: 0.5rem;
+	position: absolute;
+	top: 0.5rem;
+	width: 11rem;
+}
+
+#unlockPassword {
+	background-image: url( $img_path + 'enter.svg' );
+	border-color: $bk-clr;
+	border-width: 0.4rem 0.5rem 0.4rem 0.5rem;
+	box-sizing: content-box;
+	height: 2rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 2rem;
+	
+	&:before {
+		background-image: url( $img_path + 'hover-enter.svg' );
+		box-sizing: content-box;
+		left: -0.5rem;
+		top: -0.4rem;
+	}
+}
+
+#articleTitle {
+	border: 1px solid $interaction-clr-alt;
+	cursor: text;
+	margin: 1.5rem 0;
+	overflow-x: hidden;
+	padding: 1.4rem 3rem;
+	position: relative;
+	text-align: center;
+}
+
+.articleBody {
+	border: 1px solid $interaction-clr-alt;
+	cursor: text;
+	overflow-x: hidden;
+	padding: 4.5rem 6.8rem;
+	position: relative;
+	transition: opacity 300ms;
+	
+	@media( max-width: 700px ) {
+		padding: 1.5rem 3rem;
+	}
+	
+	&.notVisible {
+		opacity: 0;
+	}
+}
+
+.ql-editor {
+	font-family: $serif-fnt;
+	outline: none;
+	tab-size: 4;
+	white-space: pre-wrap;
+	
+	.articleBody & {
+		min-height: 103rem;
+	}
+	
+	#articleTitle & {
+		font: 3.6rem / 4.5rem $serif-fnt;
+	}
+}
+
+.editorFooter {
+	padding-bottom: 6rem;
+	position: relative;
+	
+	.articleBody.notVisible + & {
+		opacity: 0;
+	}
+}
+
+.menuBtn.addNextDoc,
+.menuBtn.deletePrevDoc {
+	-webkit-backface-visibility: hidden;
+	background-color: $bk-clr;
+	background-repeat: no-repeat;
+	border: 0.1rem solid $interaction-clr-alt;
+	position: absolute;
+	transition: opacity 500ms;
+	
+	.locked & {
+		opacity: 0;
+		z-index: -1;
+	}
+	
+	&:before {
+		background-color: $interaction-clr-alt;
+		border-radius: inherit;
+	}
+}
+
+.menuBtn.addNextDoc {
+	background-image: url( $img_path + 'blankDoc.svg' );
+	border-color: $interaction-clr-alt;
+	border-radius: 6rem;
+	height: 6rem;
+	left: 50%;
+	margin: 0 0 0 -2.25rem;
+	top: 3rem;
+	transition: border-color 200ms;
+	width: 6rem;
+	z-index: 1;
+	
+	&:hover {
+		border-color: $bk-clr;
+	}
+	
+	&:before {
+		background-image: url( $img_path + 'hover-blankDoc.svg' );
+		height: 5.8rem;
+		left: 0;
+		top: 0;
+		width: 5.8rem;
+	}
+}
+
+.menuBtn.deletePrevDoc {
+	background-image: url( $img_path + 'deletePrevDoc.svg' );
+	background-position: center 0.6rem;
+	border-top: none;
+	border-radius: 0 0 4.5rem 4.5rem; 
+	height: 2.4rem;
+	right: 1.5rem;
+	top: -0.1rem;
+	width: 4.5rem;
+
+	&:before {
+		background-image: url( $img_path + 'hover-deletePrevDoc.svg' );
+		background-position: inherit;
+	}
+}
+
+#editor[ data-font='sans_serif' ] .articleBody,
+#editor[ data-font='sans_serif' ] #articleTitle {
+	font-family: $sans-serif-fnt;
+}
+
+#editor[ data-font='monospaced' ] .articleBody,
+#editor[ data-font='monospaced' ] #articleTitle  {
+	font-family: $mono-fnt;
+}
+
+.showTextSrcs span[ class^='author-f' ] {
+	background-color: $first-author-bk-clr;
+}
+
+.showTextSrcs span[class^="author-s"] {
+	background-color: $second-author-bk-clr;
+}
+
+/* end text editor styles */

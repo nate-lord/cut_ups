@@ -1,0 +1,20 @@
+/* start animations */
+
+$BLINK: BLINK 1.25s steps( 2, start ) infinite;
+
+@keyframes BLINK {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes LOAD_SPIN {
+  from {
+    transform: rotateX( 0deg ) rotateY( 0deg );
+  }
+  to{
+    transform: rotateX( 360deg ) rotateY( 360deg );
+  }
+}
+
+/* end animations */
